@@ -47,6 +47,7 @@
           <a href="#" class="nav__list__item">Products</a>
           <a href="#" class="nav__list__item">Support</a>
         </nav>
+        <img src="/images/icon-hamburger.svg" alt="Hamburger icon for menu" class="hamburger" hidden>
       </div>
       <div class="header__main">
         <h1 class="header__title">Immersive experiences that deliver</h1>
@@ -54,7 +55,13 @@
     </div>
   </header>
   <article id="article" class="container">
-    <img src="/images/desktop/image-interactive.jpg" alt="interactive VR" class="article__img" />
+    <picture class="article__img">
+      <source media="(max-width: 375px)" srcset="
+          images/mobile/image-interactive.jpg">
+      <source media="(min-width: 768px)" srcset="
+          images/desktop/image-interactive.jpg">
+      <img src="/images/desktop/image-interactive.jpg" alt="interactive VR" />
+    </picture>
     <div class="article__text">
       <h1>The leader in interactive VR</h1>
       <p>
@@ -69,66 +76,99 @@
     <div class="container">
       <div class="gallery__header">
         <h1 class="gallery__title">Our creations</h1>
-        <button class="more__btn">See All</button>
+        <button class="more__btn__desktop">See All</button>
       </div>
       <div class="gallery__imgs">
-        <div class="gallery__img">
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+          images/mobile/image-deep-earth.jpg">
+          <source media="(min-width: 768px)" srcset="
+          images/desktop/image-deep-earth.jpg">
           <img src="/images/desktop/image-deep-earth.jpg" alt="Gallery Image deep earth" />
           <h1 class="img__title">
             Deep<br />
             earth
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+                  images/mobile/image-night-arcade.jpg">
+          <source media="(min-width: 768px)" srcset="
+                  images/desktop/image-night-arcade.jpg">
           <img src="/images/desktop/image-night-arcade.jpg" alt="Gallery Image night arcade" />
           <h1 class="img__title">
             Night<br />
             Arcade
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+          images/mobile/image-soccer-team.jpg">
+          <source media="(min-width: 768px)" srcset="
+          images/desktop/image-soccer-team.jpg">
           <img src="/images/desktop/image-soccer-team.jpg" alt="Gallery Image soccer team" />
           <h1 class="img__title">
             Soccer<br />
             Team VR
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+                  images/mobile/image-grid.jpg">
+          <source media="(min-width: 768px)" srcset="
+                  images/desktop/image-grid.jpg">
           <img src="/images/desktop/image-grid.jpg" alt="Gallery Image grid" />
           <h1 class="img__title">
             The <br />
             Grid
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+          images/mobile/image-from-above.jpg">
+          <source media="(min-width: 768px)" srcset="
+          images/desktop/image-from-above.jpg">
           <img src="/images/desktop/image-from-above.jpg" alt="Gallery Image from above" />
           <h1 class="img__title">
             From Up <br />
             Above VR
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+                  images/mobile/image-pocket-borealis.jpg">
+          <source media="(min-width: 768px)" srcset="
+                  images/desktop/image-pocket-borealis.jpg">
           <img src="/images/desktop/image-pocket-borealis.jpg" alt="Gallery Image pocket borealis" />
           <h1 class="img__title">
             Pocket <br />
             Borealis
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+                  images/mobile/image-curiosity.jpg">
+          <source media="(min-width: 768px)" srcset="
+                  images/desktop/image-curiosity.jpg">
           <img src="/images/desktop/image-curiosity.jpg" alt="Gallery Image curiosity" />
           <h1 class="img__title">
             The <br />
             Curiosity
           </h1>
-        </div>
-        <div class="gallery__img">
+        </picture>
+        <picture class="gallery__img">
+          <source media="(max-width: 768px)" srcset="
+                  images/mobile/image-fisheye.jpg">
+          <source media="(min-width: 768px)" srcset="
+                  images/desktop/image-fisheye.jpg">
           <img src="/images/desktop/image-fisheye.jpg" alt="Gallery Image fisheye" />
           <h1 class="img__title">
             Make it<br />
             fisheye
           </h1>
-        </div>
+        </picture>
       </div>
+      <button class="more__btn__mobile">See All</button>
     </div>
   </section>
   <footer id="footer">
