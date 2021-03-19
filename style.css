@@ -206,8 +206,12 @@ a:hover:after {
 }
 
 .gallery__imgs .gallery__img:hover > img {
-  color: var(--clr-black);
-  opacity: 0.5;
+  opacity: 0.3;
+}
+
+.gallery__imgs .gallery__img:hover > h1 {
+  color: black;
+  font-weight: 400;
 }
 
 #footer {
@@ -263,6 +267,9 @@ a:hover:after {
 }
 
 @media screen and (max-width: 768px) {
+  a::after {
+    display: none;
+  }
   .container {
     max-width: 85%;
     overflow-x: hidden;
@@ -294,6 +301,10 @@ a:hover:after {
 
   #article .article__img {
     margin: 0 auto;
+  }
+
+  #article .article__img:active > img {
+    opacity: 0.3;
   }
 
   #gallery .gallery__header {
@@ -388,6 +399,10 @@ a:hover:after {
     margin-top: 8rem;
   }
 
+  #article {
+    margin-top: 80px;
+  }
+
   #article img {
     width: 300px;
     margin: 0 auto;
@@ -395,6 +410,7 @@ a:hover:after {
 
   #article .article__text {
     width: 100%;
+    margin: 2rem auto 1rem;
   }
 
   #article .article__text p {
