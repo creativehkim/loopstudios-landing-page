@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-black: hsl(0, 0%, 0%);
+    --clr-dark-gray: hsl(0, 0%, 55%);
+    --clr-darker-gray: hsl(0, 0%, 41%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Alata', 'Josefin Sans', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    text-transform: uppercase;
+
+}
+
+p {
+    font-weight: 00;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#header {
+    color: var(--clr-white);
+    width: 100vw;
+    height: 600px;
+    background-image: url(/images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 3rem;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav__list {
+    display: flex;
+
+}
+
+.navbar .nav__list .nav__list__item {
+    list-style-type: none;
+    margin-left: 2rem;
+  
+}
+
+.header__main {
+    display: flex;
+    align-items: center;
+}
+
+.header__main .header__title {
+    font-size: 4rem;
+    width: 50%;
+    border: 2px solid var(--clr-white);
+    padding: 2rem;
+    line-height: 1;
+}
+
+#article {
+    margin: 100px auto;
+    position: relative;
+}
+
+.article__img  {
+    width: 700px;
+}
+
+.article__text {
+    background-color: var(--clr-white);
+    width: 600px;
+    padding: 100px 0  0 100px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.article__text h1 {
+    margin: 0 0 2rem 0;
+}
+
+.article__text p {
+    margin: 0;
+}
+
+#gallery {
+    margin: 2rem auto;
+}
+
+.gallery__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.gallery__imgs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-between;
+}
+
+.gallery__imgs .gallery__img {
+    position: relative;
+}
+
+.gallery__imgs .gallery__img h1 {
+    color: var(--clr-white);
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+}
+

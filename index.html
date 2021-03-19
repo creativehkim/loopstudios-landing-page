@@ -1,59 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Loopstudios landing page</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-  About
-  Careers
-  Events
-  Products
-  Support
+    <title>Frontend Mentor | Loopstudios landing page</title>
 
-  Immersive experiences that deliver
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <img src="/images/logo.svg" alt="logo" />
+          </div>
+            <ul class="nav__list">
+              <li class="nav__list__item">About</li>
+              <li class="nav__list__item">Careers</li>
+              <li class="nav__list__item">Events</li>
+              <li class="nav__list__item">Products</li>
+              <li class="nav__list__item">Support</li>
+            </ul>
+        </div>
+        <div class="header__main">
+          <h1 class="header__title">Immersive experiences that deliver</h1>
+        </div>
+      </div>
+    </header>
+    <article id="article" class="container">
+        <img
+          src="/images/desktop/image-interactive.jpg"
+          alt="interactive VR"
+          class="article__img"
+        />
+        <div class="article__text">
+          <h1>The leader in interactive VR</h1>
+          <p>
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe. Our
+            award-winning creations have transformed businesses through digital
+            experiences that bind to their brand.
+          </p>
+        </div>
 
-  The leader in interactive VR
-
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
-
-  Our creations
-
-  See all
-
-  Deep earth
-  Night arcade
-  Soccer team VR
-  The grid
-  From up above VR
-  Pocket borealis
-  The curiosity
-  Make it fisheye
-
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  © 2021 Loopstudios. All rights reserved.
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    </article>
+    <section id="gallery">
+      <div class="container">
+        <div class="gallery__header">
+          <h1 class="gallery__title">Our creations</h1>
+          <button class="more__btn">See All</button>
+        </div>
+        <div class="gallery__imgs">
+          
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-deep-earth.jpg"
+              alt="Gallery Image deep earth"
+            />
+            <h1 class="img__title">Deep<br>  earth</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-night-arcade.jpg"
+              alt="Gallery Image night arcade"
+            />
+            <h1 class="img__title">Night<br>  Arcade</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-soccer-team.jpg"
+              alt="Gallery Image soccer team"
+            />
+            <h1 class="img__title">Soccer<br> Team VR</h1>
+          </div>
+          <div class="gallery__img">
+            <img src="/images/desktop/image-grid.jpg" alt="Gallery Image grid" />
+            <h1 class="img__title">The <br> Grid</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-from-above.jpg"
+              alt="Gallery Image from above"
+            />
+            <h1 class="img__title">From Up <br> Above VR</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-pocket-borealis.jpg"
+              alt="Gallery Image pocket borealis"
+            />
+            <h1 class="img__title">Pocket <br> Borealis</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-curiosity.jpg"
+              alt="Gallery Image curiosity"
+            />
+            <h1 class="img__title">The <br> Curiosity</h1>
+          </div>
+          <div class="gallery__img">
+            <img
+              src="/images/desktop/image-fisheye.jpg"
+              alt="Gallery Image fisheye"
+            />
+            <h1 class="img__title">Make it<br>  fisheye</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+<footer id="footer" class="container">
+  <div class="container">
+    <div class="logo">
+      <img src="/images/logo.svg" alt="logo" />
+    </div>
+    <nav class="navbar">
+      <ul class="nav__list">
+        <li class="nav__list__item">About</li>
+        <li class="nav__list__item">Careers</li>
+        <li class="nav__list__item">Events</li>
+        <li class="nav__list__item">Products</li>
+        <li class="nav__list__item">Support</li>
+      </ul>
+    </nav>
+    <div class="social__icons">
+      <div class="social__icon"></div>
+      <div class="social__icon"></div>
+      <div class="social__icon"></div>
+      <div class="social__icon"></div>
+    </div>
+    <div class="copywrite">© 2021 Loopstudios. All rights
+      reserved.</div>
   </div>
-</body>
+  
+  </footer>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/creativehkim">Hyunji Kim</a>.
+    </div>
+  </body>
 </html>
